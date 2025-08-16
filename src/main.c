@@ -10,8 +10,8 @@ int main(int argc, char *argv[]) {
   printf("$ ");
 
   // Wait for user input
-  char input[100];
-  fgets(input, 100, stdin);
+  char input[150];
+  fgets(input, 150, stdin);
   input[strcspn(input, "\n")] = 0;
   input[strlen(input) - 1] = '\0';
   printf("%s: command not found\n", input);
